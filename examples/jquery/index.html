@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-framework="jquery">
+<html lang="zh" data-framework="jquery">
 	<head>
 		<meta charset="utf-8">
 		<title>jQuery • TodoMVC</title>
@@ -11,17 +11,17 @@
 		<section class="todoapp">
 			<header class="header">
 				<h1>todos</h1>
-				<input class="new-todo" placeholder="What needs to be done?" autofocus>
+				<input class="new-todo" placeholder="有什么需要完成?" autofocus>
 			</header>
 			<section class="main">
 				<input id="toggle-all" class="toggle-all" type="checkbox">
-				<label for="toggle-all">Mark all as complete</label>
+				<label for="toggle-all">全部标记为完成</label>
 				<ul class="todo-list"></ul>
 			</section>
 			<footer class="footer"></footer>
 		</section>
 		<footer class="info">
-			<p>Double-click to edit a todo</p>
+			<p>双击以编辑待办事项</p>
 			<p>Created by <a href="http://sindresorhus.com">Sindre Sorhus</a></p>
 			<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
 		</footer>
@@ -41,13 +41,13 @@
 			<span class="todo-count"><strong>{{activeTodoCount}}</strong> {{activeTodoWord}} left</span>
 			<ul class="filters">
 				<li>
-					<a {{#eq filter 'all'}}class="selected"{{/eq}} href="#/all">All</a>
+					<a {{#eq filter '全部'}}class="selected"{{/eq}} href="#/all">All</a>
 				</li>
 				<li>
-					<a {{#eq filter 'active'}}class="selected"{{/eq}}href="#/active">Active</a>
+					<a {{#eq filter '活动'}}class="selected"{{/eq}}href="#/active">Active</a>
 				</li>
 				<li>
-					<a {{#eq filter 'completed'}}class="selected"{{/eq}}href="#/completed">Completed</a>
+					<a {{#eq filter '已完成'}}class="selected"{{/eq}}href="#/completed">Completed</a>
 				</li>
 			</ul>
 			{{#if completedTodos}}<button class="clear-completed">Clear completed</button>{{/if}}
