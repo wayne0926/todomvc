@@ -41,13 +41,13 @@
 			<span class="todo-count"><strong>{{activeTodoCount}}</strong> {{activeTodoWord}} left</span>
 			<ul class="filters">
 				<li>
-					<a {{#eq filter '全部'}}class="selected"{{/eq}} href="#/all">All</a>
+					<a {{#eq filter 'all'}}class="selected"{{/eq}} href="#/all">全部</a>
 				</li>
 				<li>
-					<a {{#eq filter '活动'}}class="selected"{{/eq}}href="#/active">Active</a>
+					<a {{#eq filter 'active'}}class="selected"{{/eq}}href="#/active">活动</a>
 				</li>
 				<li>
-					<a {{#eq filter '已完成'}}class="selected"{{/eq}}href="#/completed">Completed</a>
+					<a {{#eq filter 'completed'}}class="selected"{{/eq}}href="#/completed">已完成</a>
 				</li>
 			</ul>
 			{{#if completedTodos}}<button class="clear-completed">Clear completed</button>{{/if}}
